@@ -1,0 +1,5 @@
+# locate container engineering-bay replica on the instance
+docker ps
+
+# show logs of the replica
+docker logs engineering-bay.1
