@@ -23,6 +23,6 @@ RUN mkdir -p /opt/gitlab/sv/sshd/supervise \
     && ln -s /opt/gitlab/sv/sshd /opt/gitlab/service \
     && mkdir -p /var/run/sshd
 
-RUN (./opt/gitlab/embedded/bin/runsvdir-start &) && EXTERNAL_URL="https://gitlab.example.com" gitlb-ctl reconfigure 
+RUN (./opt/gitlab/embedded/bin/runsvdir-start &) && EXTERNAL_URL="https://gitlab.example.com" gitlab-ctl reconfigure && gitlab-ctl tail
 
 EXPOSE 80 443 22
