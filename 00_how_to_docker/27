@@ -2,4 +2,4 @@
 docker ps
 
 # show logs of the replica
-docker logs <name> #ex engineering-bay.1.9d0epide4frpbfkb94s1tcejd
+docker logs -f <name> #ex engineering-bay.1.9d0epide4frpbfkb94s1tcejd
